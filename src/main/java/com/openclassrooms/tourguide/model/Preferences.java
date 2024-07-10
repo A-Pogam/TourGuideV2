@@ -1,24 +1,25 @@
-package com.openclassrooms.tourguide.user;
+package com.openclassrooms.tourguide.model;
 
-public class UserPreferences {
-	
+public class Preferences {
+
 	private int attractionProximity = Integer.MAX_VALUE;
 	private int tripDuration = 1;
 	private int ticketQuantity = 1;
 	private int numberOfAdults = 1;
 	private int numberOfChildren = 0;
-	
-	public UserPreferences() {
+
+	public Preferences() {
+
 	}
-	
+
 	public void setAttractionProximity(int attractionProximity) {
 		this.attractionProximity = attractionProximity;
 	}
-	
+
 	public int getAttractionProximity() {
 		return attractionProximity;
 	}
-	
+
 	public int getTripDuration() {
 		return tripDuration;
 	}
@@ -34,7 +35,7 @@ public class UserPreferences {
 	public void setTicketQuantity(int ticketQuantity) {
 		this.ticketQuantity = ticketQuantity;
 	}
-	
+
 	public int getNumberOfAdults() {
 		return numberOfAdults;
 	}
@@ -50,5 +51,4 @@ public class UserPreferences {
 	public void setNumberOfChildren(int numberOfChildren) {
 		this.numberOfChildren = numberOfChildren;
 	}
-
 }
