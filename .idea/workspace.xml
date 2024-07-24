@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="04298d43-56ec-4496-a259-c2797a2b1ea8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/openclassrooms/tourguide/TourguideApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/openclassrooms/tourguide/TourguideApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/openclassrooms/tourguide/TestPerformance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/openclassrooms/tourguide/TestRewardsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/openclassrooms/tourguide/TestTourGuideService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/openclassrooms/tourguide/TourguideApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2imd3A6T5oM7ObnW0ulsG2hk4DS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.TourguideApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PerformanceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PerformanceTest.highVolumeGetRewards.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PerformanceTest.highVolumeTrackLocation.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RewardServiceIT.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RewardServiceIT.nearAllAttractions.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TourGuideControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TourGuideServiceIT.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TourGuideServiceIT.getNearbyAttractions.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/alicepogam/Documents/Formation OCR/F. Java/P8/TourGuideV2&quot;
+  }
+}</component>
+  <component name="RunManager" selected="JUnit.PerformanceTest.highVolumeTrackLocation">
+    <configuration name="PerformanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tourguide" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.tourguide.performance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.openclassrooms.tourguide.performance" />
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.tourguide.performance.PerformanceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PerformanceTest.highVolumeGetRewards" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tourguide" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.tourguide.performance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.openclassrooms.tourguide.performance" />
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.tourguide.performance.PerformanceTest" />
+      <option name="METHOD_NAME" value="highVolumeGetRewards" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PerformanceTest.highVolumeTrackLocation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tourguide" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.tourguide.performance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.openclassrooms.tourguide.performance" />
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.tourguide.performance.PerformanceTest" />
+      <option name="METHOD_NAME" value="highVolumeTrackLocation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RewardServiceIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tourguide" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.tourguide.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.openclassrooms.tourguide.service" />
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.tourguide.service.RewardServiceIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TourGuideServiceIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tourguide" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.tourguide.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.openclassrooms.tourguide.service" />
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.tourguide.service.TourGuideServiceIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="TourGuide" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="TourGuide" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PerformanceTest.highVolumeTrackLocation" />
+        <item itemvalue="JUnit.PerformanceTest" />
+        <item itemvalue="JUnit.PerformanceTest.highVolumeGetRewards" />
+        <item itemvalue="JUnit.RewardServiceIT" />
+        <item itemvalue="JUnit.TourGuideServiceIT" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-9b16c6e2" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="04298d43-56ec-4496-a259-c2797a2b1ea8" name="Changes" comment="" />
+      <created>1720099484164</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720099484164</updated>
+    </task>
+    <servers />
+  </component>
+</project>
