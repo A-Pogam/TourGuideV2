@@ -8,19 +8,50 @@ import java.util.UUID;
 import gpsUtil.location.VisitedLocation;
 import tripPricer.Provider;
 
+/**
+ * Represents a user in the tour guide application.
+ * This class contains information about the user, including personal details,
+ * visited locations, rewards, preferences, and trip deals.
+ */
 public class User {
 
 	private final UUID userId;
 	private final String userName;
 	private String phoneNumber;
 	private String emailAddress;
+
+	/**
+	 * The timestamp of the user's latest location update.
+	 */
 	private Date latestLocationTimestamp;
 
+	/**
+	 * A list of locations visited by the user.
+	 */
 	private List<VisitedLocation> visitedLocations = new ArrayList<>();
+
+	/**
+	 * A list of rewards earned by the user.
+	 */
 	private List<Reward> rewards = new ArrayList<>();
+
+	/**
+	 * The user's preferences for tour planning.
+	 */
 	private Preferences preferences = new Preferences();
+	/**
+	 * A list of trip deals available for the user.
+	 */
 	private List<Provider> tripDeals = new ArrayList<>();
 
+	/**
+	 * Constructs a User object with the specified user ID, name, phone number, and email address.
+	 *
+	 * @param userId The unique identifier for the user.
+	 * @param userName The name of the user.
+	 * @param phoneNumber The phone number of the user.
+	 * @param emailAddress The email address of the user.
+	 */
 	public User(UUID userId, String userName, String phoneNumber, String emailAddress) {
 		this.userId = userId;
 		this.userName = userName;

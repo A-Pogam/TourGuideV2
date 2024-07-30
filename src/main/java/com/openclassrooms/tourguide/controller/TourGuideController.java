@@ -16,39 +16,57 @@ import gpsUtil.location.Attraction;
 import gpsUtil.location.VisitedLocation;
 import tripPricer.Provider;
 
+/**
+ * The TourGuideController class handles HTTP requests related to the TourGuide service.
+ */
 @RestController
 public class TourGuideController {
 
 	@Autowired
 	private ITourGuideService iTourGuideService;
 
+	/**
+	 * Handles the root request and returns a greeting message.
+	 *
+	 * @return A greeting message.
+	 */
 	@GetMapping("/")
 	public String index() {
 		return "Greetings from TourGuide!";
 	}
-	
+
+	/**
+	 * Retrieves a user based on the provided username.
+	 *
+	 * @param userName The username of the user to retrieve.
+	 * @return The User object.
+	 */
 	@GetMapping("/user")
 	public User getUser(@RequestParam String userName) {
 		return iTourGuideService.getUser(userName);
 	}
 
+	/**
+	 * Retrieves the location of a user based on the provided username.
+	 *
+	 * @param userName The username of the user.
+	 * @return The VisitedLocation object of the user.
+	 */
 	@GetMapping("/getLocation")
 	public VisitedLocation getLocation(@RequestParam String userName) {
 		User user = iTourGuideService.getUser(userName);
 		return iTourGuideService.getUserLocation(user);
 	}
 
-	// TODO: Change this method to no longer return a List of Attractions.
-	// Instead: Get the closest five tourist attractions to the user - no matter how
-	// far away they are.
-	// Return a new JSON object that contains:
-		// Name of Tourist attraction,
-		// Tourist attractions lat/long,
-		// The user's location lat/long,
-		// The distance in miles between the user's location and each of the
-		// attractions.
-		// The reward points for visiting each Attraction.
-	// Note: Attraction reward points can be gathered from RewardsCentral
+	/**
+	 * Retrieves the nearest tourist attractions to a user based on the provided username.
+	 * The returned information includes the attraction name, attraction latitude/longitude,
+	 * user location latitude/longitude, distance between the user and the attraction, and
+	 * the reward points for visiting each attraction.
+	 *
+	 * @param userName The username of the user.
+	 * @return A list of AttractionNearUserDto objects.
+	 */
 	@GetMapping("/getNearbyAttractions")
 	public List<AttractionNearUserDto> getNearbyAttractions(@RequestParam String userName) {
 		User user = iTourGuideService.getUser(userName);
@@ -58,12 +76,24 @@ public class TourGuideController {
 		return iTourGuideService.nearbyAttractionsToDto(visitedLocation, user, nearbyAttractions);
 	}
 
+	/**
+	 * Retrieves the rewards for a user based on the provided username.
+	 *
+	 * @param userName The username of the user.
+	 * @return A list of Reward objects for the user.
+	 */
 	@GetMapping("/getRewards")
 	public List<Reward> getRewards(@RequestParam String userName) {
 		User user = iTourGuideService.getUser(userName);
 		return iTourGuideService.getUserRewards(user);
 	}
 
+	/**
+	 * Retrieves trip deals for a user based on the provided username.
+	 *
+	 * @param userName The username of the user.
+	 * @return A list of Provider objects representing trip deals for the user.
+	 */
 	@GetMapping("/getTripDeals")
 	public List<Provider> getTripDeals(@RequestParam String userName) {
 		User user = iTourGuideService.getUser(userName);

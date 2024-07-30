@@ -19,10 +19,20 @@ import com.openclassrooms.tourguide.service.TourGuideService;
 import gpsUtil.location.Location;
 import gpsUtil.location.VisitedLocation;
 
+/**
+ * Utility class for initializing internal test users with random locations and visit histories.
+ * This class generates a specified number of internal users with random location data and visit history for testing purposes.
+ */
 public class InternalUsersInitializer {
 
 	private Logger logger = LoggerFactory.getLogger(TourGuideService.class);
 
+	/**
+	 * Initializes a map of internal test users.
+	 * Each user is assigned a unique username, phone number, email, and random location history.
+	 *
+	 * @return A map of internal users with their usernames as keys.
+	 */
 	public Map<String, User> initializeInternalUsers() {
 		Map<String, User> internalUserMap = new HashMap<>();
 
@@ -40,6 +50,12 @@ public class InternalUsersInitializer {
 		return internalUserMap;
 	}
 
+	/**
+	 * Generates random location history for a user.
+	 * Adds three random visited locations to the user's visit history.
+	 *
+	 * @param user The user for whom the location history is to be generated.
+	 */
 	private void generateUserLocationHistory(User user) {
 		IntStream.range(0, 3).forEach(i -> {
 			user.addToVisitedLocations(new VisitedLocation(user.getUserId(),
@@ -47,11 +63,23 @@ public class InternalUsersInitializer {
 		});
 	}
 
+	/**
+	 * Generates a random longitude value.
+	 *
+	 * @return A random longitude between -180 and 180.
+	 */
+
 	private double generateRandomLongitude() {
 		double leftLimit = -180;
 		double rightLimit = 180;
 		return leftLimit + new Random().nextDouble() * (rightLimit - leftLimit);
 	}
+
+	/**
+	 * Generates a random latitude value.
+	 *
+	 * @return A random latitude between -85.05112878 and 85.05112878.
+	 */
 
 	private double generateRandomLatitude() {
 		double leftLimit = -85.05112878;
@@ -59,6 +87,11 @@ public class InternalUsersInitializer {
 		return leftLimit + new Random().nextDouble() * (rightLimit - leftLimit);
 	}
 
+	/**
+	 * Generates a random time within the last 30 days.
+	 *
+	 * @return A random date within the last 30 days.
+	 */
 	private Date getRandomTime() {
 		LocalDateTime localDateTime = LocalDateTime.now().minusDays(new Random().nextInt(30));
 		return Date.from(localDateTime.toInstant(ZoneOffset.UTC));
